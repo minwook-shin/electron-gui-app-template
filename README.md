@@ -1,2 +1,9 @@
 # electron-app
-일렉트론 앱 프레임워크 저장소
+
+## how to testing?
+1. download and install nodejs.
+2. installing electron devDependencies.
+3. starting npm.
+
+## blank content...?
+yes. back-end and front-end are not yet.
