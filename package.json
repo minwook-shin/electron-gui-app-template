@@ -1,0 +1,24 @@
+{
+  "name": "electron-app",
+  "version": "1.0.0",
+  "description": "Electron part of the code and design program.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"test check succeeded\" && exit 0",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CODE-A-DESIGN/electron-app.git"
+  },
+  "keywords": [],
+  "author": "minwook-shin(github.com/minwook-shin)",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/CODE-A-DESIGN/electron-app/issues"
+  },
+  "homepage": "https://github.com/CODE-A-DESIGN/electron-app#readme",
+  "devDependencies": {
+    "electron": "^1.7.8"
+  }
+}
