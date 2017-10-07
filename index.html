@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gong-Po service</title>
+    <link rel="stylesheet" href="photon\dist\css\photon.css">
+    <script src="index.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="window">
+      <header class="toolbar toolbar-header">
+        <h1 class="title">Gong-Po service</h1>
+      </header>
+      <div class="window-content">
+      <!-- contents here -->
+      </div>
+      <footer class="toolbar toolbar-footer">
+        <div class="toolbar-actions">
+          <button class="btn btn-default">
+            developer homepage
+          </button>
+          <button class="btn btn-primary pull-right"id="btn_quit">
+            Quit
+          </button>
+          <script>
+              const {remote} = require('electron')
+              document.getElementById("btn_quit").addEventListener("click", function (e) {
+                  var window = remote.getCurrentWindow();
+                  window.close()})
+          </script>
+        </div>
+      </footer>
+    </div>    
+  </body>
+</html>
