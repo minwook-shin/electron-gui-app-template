@@ -3,7 +3,7 @@ app.on("ready",()=>{
     const apps = new BrowserWindow({
         frame:false,
         titleBarStyle: 'hidden',
-        title: "gong-po_service",
+        title: "electron gui app template",
         show: false
     })
     apps.loadURL(`file://${__dirname}/index.html`)

@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Gong-Po service</title>
-    <link rel="stylesheet" href="photon\dist\css\photon.css">
-    <script src="index.js" charset="utf-8"></script>
-    <style>
+
+<head>
+  <title>Gong-Po service</title>
+  <link rel="stylesheet" href="photon\dist\css\photon.css">
+  <script src="index.js" charset="utf-8"></script>
+  <style>
     h1 {
-        -webkit-app-region: drag;
+      -webkit-app-region: drag;
     }
-    </style>
-  </head>
-  <body>
-    <div class="window">
-      <header class="toolbar toolbar-header">
-        <h1 class="title">Gong-Po service</h1>
-      </header>
-      <div class="window-content">
+  </style>
+</head>
+
+<body>
+  <div class="window">
+    <header class="toolbar toolbar-header">
+      <h1 class="title">electron-gui-app-template</h1>
+    </header>
+    <div class="window-content">
       <!-- contents here -->
+    </div>
+    <footer class="toolbar toolbar-footer">
+      <div class="toolbar-actions">
+        minwook-shin.github.io
+        <button class="btn btn-primary pull-right" id="btn_quit">
+          <span class="icon icon-cancel-circled"></span> Quit
+        </button>
+        <script>
+          const {
+            remote
+          } = require('electron')
+          document.getElementById("btn_quit").addEventListener("click", function (e) {
+            var window = remote.getCurrentWindow();
+            window.close()
+          })
+        </script>
       </div>
-      <footer class="toolbar toolbar-footer">
-        <div class="toolbar-actions">
-          code-a-design.github.io
-          <button class="btn btn-primary pull-right"id="btn_quit">
-            <span class="icon icon-cancel-circled"></span> Quit
-          </button>
-          <script>
-              const {remote} = require('electron')
-              document.getElementById("btn_quit").addEventListener("click", function (e) {
-                  var window = remote.getCurrentWindow();
-                  window.close()})
-          </script>
-        </div>
-      </footer>
-    </div>    
-  </body>
+    </footer>
+  </div>
+</body>
+
 </html>

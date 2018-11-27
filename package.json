@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CODE-A-DESIGN/electron-app.git"
+    "url": "git+https://github.com/minwook-shin/electron-gui-app-template.git"
   },
   "keywords": [],
   "author": "minwook-shin(github.com/minwook-shin)",
   "license": "GPL",
   "bugs": {
-    "url": "https://github.com/CODE-A-DESIGN/electron-app/issues"
+    "url": "https://github.com/minwook-shin/electron-gui-app-template/issues"
   },
-  "homepage": "https://github.com/CODE-A-DESIGN/electron-app#readme",
+  "homepage": "https://github.com/minwook-shin/electron-gui-app-template",
   "devDependencies": {
     "electron": "^1.7.8"
   }
